@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <queue>
 #include<conio.h>
+#include<stdlib.h>
 
 using namespace std;
 
@@ -17,6 +18,7 @@ int main()
         cout << "2. Liczba pacjentów w kolejce\n";
         cout << "3. Kto następny?\n";
         cout << "4. Wywolanie pacjenta\n";
+        cout << "5. Wylacz program\n";
 
         cin >> wybor;
         system("cls");
@@ -53,7 +55,12 @@ int main()
                 pacjenci.pop();
             }
         break;
+
+        case 5:
+            exit(1);
+        break;
         }
+        
         _getch();
 
        
